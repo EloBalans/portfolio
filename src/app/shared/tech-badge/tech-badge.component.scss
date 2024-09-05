@@ -1,0 +1,20 @@
+:host{
+  padding: 0.25rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  b{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+  img{
+    border: 1px solid var(--border-color);
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: var(--border-radius);;
+  }
+}

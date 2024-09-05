@@ -1,0 +1,22 @@
+:host {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  justify-content: left;
+  top: 0;
+
+  //background-color: #272822;
+  //border-bottom:3px solid var(--border-color);
+
+  .nav-text{
+    padding: 15px 0;
+  }
+
+  button{
+    margin: 10px;
+    @media (max-width: 750px) {
+      width: 100%;
+    }
+  }
+}

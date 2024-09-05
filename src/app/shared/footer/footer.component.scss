@@ -1,0 +1,24 @@
+:host{
+  background-color: #272822;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  justify-content: right;
+  bottom: 0;
+  position: absolute;
+  border-top: 3px solid var(--border-color);
+
+  .nav-text{
+    padding: 15px 0;
+  }
+
+  button{
+    margin: 10px;
+  }
+}
+
+img:hover{
+  transform: rotateY(360deg);
+  transition: .5s;
+}

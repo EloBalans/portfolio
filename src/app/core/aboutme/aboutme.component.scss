@@ -1,0 +1,25 @@
+:host{
+  display: flex;
+  justify-content: center;
+  margin: 30px 10%;
+
+  .image-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    img{
+      border-radius: var(--border-radius);
+    }
+  }
+
+  .container{
+    display: flex;
+    margin: 30px;
+    @media (max-width: 750px) {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+

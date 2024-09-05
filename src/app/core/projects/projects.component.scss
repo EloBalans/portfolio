@@ -1,0 +1,46 @@
+$gap: 30px;
+
+:host{
+  display: flex;
+  justify-content: center;
+  margin: 30px ;
+  flex-wrap: wrap;
+  gap: var(--gap);
+
+  .card-container {
+
+    width: 100%;
+    flex: calc( 50% - var(--gap));
+    .card-content{
+      display: flex;
+
+      @media (max-width: 750px) {
+        flex-direction: column;
+      }
+      .carousel-container {
+        display: flex;
+        min-height: 300px;
+        min-width: 400px;
+        padding: 2em;
+      }
+
+      .description-container {
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .description{
+          margin-bottom: 1rem;
+        }
+
+        .badges{
+          display: flex;
+          gap: 10px;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+
+}
