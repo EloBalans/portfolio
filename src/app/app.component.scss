@@ -1,12 +1,9 @@
-:host{
+:host {
   display: block;
   min-height: 100vh;
   position: relative;
 
   render-outlet {
-    margin-bottom: 60px
+    margin-bottom: 60px;
   }
 }
-
-
-

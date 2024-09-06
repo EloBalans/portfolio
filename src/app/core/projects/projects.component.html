@@ -1,23 +1,22 @@
-@for (project of projects; track project){
+@for (project of projects; track project) {
   <div class="card-container">
     <app-card [title]="project.title">
       <div class="card-content">
         <div class="carousel-container">
-          <app-carousel [images]="project.imagesURL"/>
+          <app-carousel [images]="project.imagesURL" />
         </div>
-        <div class="description-container ">
+        <div class="description-container">
           <div class="description">
             {{ project.description }}
           </div>
 
           <div class="badges">
-            @for(tech of project.tech; track tech){
-              <app-tech-badge [tech]="tech"/>
+            @for (tech of project.tech; track tech) {
+              <app-tech-badge [tech]="tech" />
             }
           </div>
         </div>
       </div>
     </app-card>
   </div>
-
 }

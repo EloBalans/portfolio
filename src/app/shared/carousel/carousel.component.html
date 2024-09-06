@@ -1,32 +1,26 @@
 <div class="carousel">
-  @for (image of images(); track image; let i = $index){
-    @if(i === index()){
-      <img
-        [ngSrc]="image"
-        height="100"
-        width="100"
-        class="slide"
-        alt="alt"
-        @slideAnimation
-      />
+  @for (image of images(); track image; let i = $index) {
+    @if (i === index()) {
+      <img [src]="image" class="slide" alt="alt" @slideAnimation />
     }
   }
 
-  <button class="button-arrow" style="left: 10px;" (click)="goToPrevious()">
+  <button class="button-arrow" style="left: 10px" (click)="goToPrevious()">
     <span class="arrow left"></span>
   </button>
-  <button class="button-arrow" style="right: 10px;" (click)="goToNext()">
+  <button class="button-arrow" style="right: 10px" (click)="goToNext()">
     <span class="arrow right"></span>
   </button>
   <div class="button-toggle-container">
-
-    @for (image of images(); track image; let i = $index){
+    @for (image of images(); track image; let i = $index) {
       <button
         (click)="goTo(i)"
         class="button button-toggle"
         [ngClass]="{
-        'button-active': index() === i}"
+          'button-active': index() === i,
+        }"
       >
+        <span></span>
       </button>
     }
   </div>

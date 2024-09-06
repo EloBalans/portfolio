@@ -1,23 +1,24 @@
+<div class="footer-info">
+  <div class="info">
+    {{ mail }}
+  </div>
+  <div class="info">
+    {{ nr }}
+  </div>
+</div>
 
-    <div style="color: white; margin: 10px;    text-transform: uppercase;    letter-spacing: 0.1rem;
-    font-size: 0.7rem">
-      <div style="padding: 8px">
-        {{mail }}
-      </div>
-      <div style="padding: 8px">
-        {{ nr }}
-      </div>
-    </div>
-
-    <button style="--clr:var(--color-gradient-1)" class="icon-button">
-      <span>
-        <img  ngSrc="/assets/icons/git-icon.png" width="30" height="30" alt="alt">
-      </span>
-    </button>
-    <button style="--clr:var(--color-gradient-1)" class="icon-button">
-      <span>
-        <img  ngSrc="/assets/icons/linkedin-icon.png" width="30" height="30" alt="alt">
-      </span>
-    </button>
-
-
+<button (click)="goToGit()" class="icon-button">
+  <span>
+    <img ngSrc="/assets/icons/git-icon.png" width="30" height="30" alt="alt" />
+  </span>
+</button>
+<button (click)="goToLinkedin()" class="icon-button">
+  <span>
+    <img
+      ngSrc="/assets/icons/linkedin-icon.png"
+      width="30"
+      height="30"
+      alt="alt"
+    />
+  </span>
+</button>

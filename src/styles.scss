@@ -1,19 +1,19 @@
 :root {
-  --background-color:  #ffffff;
+  --background-color: #ffffff;
   --card-color: #f0ecec;
   --text-color: #232323;
   --border-color: #5a5050;
   --border-radius: 0.7rem;
   --title-font-size: 2rem;
   --content-font-size: 1rem;
-  --color-gradient-1: #1ABC9C;
-  --color-gradient-2: #4AB1A7;
-  --color-gradient-3: #7E44AD;
-  --color-gradient-4: #8E44AD;
-  --color-gradient-5: #9B5D8D;
-  --gap: 30px
+  --color-gradient-1: #1abc9c;
+  --color-gradient-2: #4ab1a7;
+  --color-gradient-3: #7e44ad;
+  --color-gradient-4: #8e44ad;
+  --color-gradient-5: #9b5d8d;
+  --gap: 30px;
 }
-html{
+html {
   font-size: 14px;
 
   height: 100%;
@@ -25,15 +25,20 @@ body {
   height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   overflow: auto;
-  background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
+  background: linear-gradient(
+    315deg,
+    rgba(101, 0, 94, 1) 3%,
+    rgba(60, 132, 206, 1) 38%,
+    rgba(48, 238, 226, 1) 68%,
+    rgba(255, 25, 25, 1) 98%
+  );
   animation: gradient 15s ease infinite;
   background-size: 400% 400%;
 }
 
-
 @keyframes gradient {
   0% {
-    background-position: 0 ;
+    background-position: 0;
   }
   50% {
     background-position: 100% 100%;
@@ -96,14 +101,14 @@ body {
 //  src: url('/assets/fonts/WorkSans-Italic-VariableFont_wght') format('opentype');
 //}
 
-.nav-text{
+.nav-text {
   color: white;
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: bold;
 }
 
-.icon-button{
+.icon-button {
   padding: 1rem;
   &::before {
     background: white;
@@ -121,7 +126,7 @@ button {
   font-size: 1rem;
   padding: 1rem 3rem;
   transition: 0.2s;
-  border-radius: var(--border-radius);;
+  border-radius: var(--border-radius);
 
   &:hover {
     background: var(--clr);
@@ -131,17 +136,16 @@ button {
   }
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     inset: 2px;
-    border-radius: var(--border-radius);;
+    border-radius: var(--border-radius);
     background: #272822;
   }
   span {
     position: relative;
     z-index: 1;
   }
-
 }
 
 @keyframes move {
@@ -168,12 +172,12 @@ button {
   }
 }
 
-.text-x-large{
+.text-x-large {
   font-size: 2rem;
-  letter-spacing: 0.1rem
+  letter-spacing: 0.1rem;
 }
 
-.text-small{
+.text-small {
   font-size: 0.7rem;
   letter-spacing: 0.1rem;
 }

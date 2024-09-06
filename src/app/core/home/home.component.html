@@ -1,34 +1,14 @@
-<div class="home-container">
-
-  <h1 style="font-weight: 700; font-size: 3rem; color: white">Mateusz Zatoń</h1>
-  <h2 style="font-size: 1.875rem; color: white">Angular Frontend Developer</h2>
-  <div style="display: flex; gap: 30px;margin: 25px 0; flex-wrap: wrap">
-
-    <div class="tech-item" >
-      <img class="tech-icon" ngSrc="/assets/icons/angular-icon.png" width="80" height="80" alt="alt">
-      <span>Angular</span>
-    </div>
-
-    <div class="tech-item" >
-      <img class="tech-icon" ngSrc="/assets/icons/rxjs-icon.png" width="80" height="80" alt="alt">
-      <span>RxJS</span>
-    </div>
-
-    <div class="tech-item" >
-      <img class="tech-icon" ngSrc="/assets/icons/ngrx-icon.png" width="80" height="80" alt="alt">
-      <span>NgRX</span>
-    </div>
-
-    <div class="tech-item" >
-      <img class="tech-icon" ngSrc="/assets/icons/cypress-icon.png" width="80" height="80" alt="alt">
-      <span>Cypress</span>
-    </div>
-
-  </div>
-  <span style="margin-bottom: 40px">
-  <button style="--clr:var(--color-gradient-3)"><span>Download my resume</span></button>
-</span>
+<h1>Mateusz Zatoń</h1>
+<h2>Angular Frontend Developer</h2>
+<div class="techs">
+  @for (tech of techs; track tech) {
+    <app-tech-icon [tech]="tech" />
+  }
 </div>
+<span>
+  <button (click)="downloadResume()"><span>Download my resume</span></button>
+</span>
+
 <!--<div style="position: absolute; right: 20%;bottom: 0; z-index: -1" >-->
 <!--  <img ngSrc="/assets/icons/ja.png" width="600" height="600" alt="alt">-->
 <!--</div>-->

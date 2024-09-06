@@ -1,25 +1,26 @@
-:host{
+:host {
   display: flex;
   justify-content: center;
   margin: 30px 10%;
 
-  .image-container{
+  .image-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
 
-    img{
+    img {
       border-radius: var(--border-radius);
     }
   }
 
-  .container{
+  .container {
     display: flex;
     margin: 30px;
     @media (max-width: 750px) {
       flex-wrap: wrap;
     }
   }
+  .text {
+    letter-spacing: 0.08rem;
+  }
 }
-
-

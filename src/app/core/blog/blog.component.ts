@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component} from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'app-blog',
@@ -6,8 +6,6 @@ import {ChangeDetectionStrategy, Component} from '@angular/core';
   imports: [],
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class BlogComponent {
-
-}
+export class BlogComponent {}

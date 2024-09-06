@@ -1,5 +1,5 @@
-<app-header/>
-<div style="padding-bottom: 80px;">
-  <router-outlet/>
+<app-header />
+<div style="padding-bottom: 200px" [@routeAnimations]="prepareRoute(outlet)">
+  <router-outlet #outlet="outlet" />
 </div>
-<app-footer/>
+<app-footer />

@@ -1,4 +1,4 @@
-:host{
+:host {
   background-color: #272822;
   display: flex;
   flex-wrap: wrap;
@@ -9,16 +9,27 @@
   position: absolute;
   border-top: 3px solid var(--border-color);
 
-  .nav-text{
-    padding: 15px 0;
+  .footer-info {
+    color: white;
+    margin: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    .info {
+      padding: 8px;
+    }
   }
 
-  button{
+  .icon-button {
+    --clr: var(--color-gradient-1);
     margin: 10px;
   }
-}
 
-img:hover{
-  transform: rotateY(360deg);
-  transition: .5s;
+  @media (max-width: 600px) {
+  }
+
+  img:hover {
+    transform: rotateY(360deg);
+    transition: 0.5s;
+  }
 }
