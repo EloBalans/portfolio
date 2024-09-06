@@ -23,6 +23,12 @@
     gap: 30px;
     margin: 25px 0;
     flex-wrap: wrap;
+
+    @media (max-width: 750px) {
+      app-tech-icon {
+        width: calc(50% - 15px);
+      }
+    }
   }
 
   span {
