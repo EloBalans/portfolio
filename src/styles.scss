@@ -15,7 +15,6 @@
 }
 html {
   font-size: 14px;
-
   height: 100%;
 }
 
@@ -23,7 +22,8 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Roboto', sans-serif;
+
   overflow: auto;
   background: linear-gradient(
     315deg,
@@ -95,11 +95,6 @@ body {
     transform: translateX(1);
   }
 }
-
-//@font-face {
-//  font-family: 'Custom';
-//  src: url('/assets/fonts/WorkSans-Italic-VariableFont_wght') format('opentype');
-//}
 
 .nav-text {
   color: white;
