@@ -1,8 +1,14 @@
 @if (title()) {
-  <b class="text-x-large">{{ title() }}</b>
+  <b
+    class="text-x-large"
+    style="display: flex; justify-content: space-between; flex-wrap: wrap"
+  >
+    <span>{{ title() }}</span>
+    <ng-content select="[title-content]" />
+  </b>
   <hr class="divider" />
 }
 
 <div class="card-content">
-  <ng-content />
+  <ng-content select="[content]" />
 </div>

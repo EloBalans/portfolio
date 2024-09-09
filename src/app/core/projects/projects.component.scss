@@ -17,6 +17,10 @@ $gap: 30px;
   flex: calc(50% - $gap);
   box-sizing: border-box; // Ensure padding and border are included in width calculation
 
+  .icon-button {
+    padding: 0.5rem;
+  }
+
   .card-content {
     display: flex;
     flex-wrap: wrap;

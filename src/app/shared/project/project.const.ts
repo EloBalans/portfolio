@@ -47,6 +47,10 @@ export const PROJECTS: Project[] = [
     tech: [ANGULAR_TECH, RX_JS_TECH, TS_TECH, JEST_TECH, CYPRESS_TECH],
     description:
       'I participated in the development of the EasySolar application, which offers features for solar system design, electrical schematic generation, and financial analysis. My role involved collaborating on the implementation of these key functionalities, which allowed me to enhance my skills in solar technology and frontend development',
+    page: {
+      url: 'https://easysolar.app/pl/',
+      icon: '/assets/icons/easysolar-icon.png',
+    },
   },
   {
     title: 'AMRON',
@@ -58,6 +62,10 @@ export const PROJECTS: Project[] = [
     tech: [ANGULAR_TECH, RX_JS_TECH, TS_TECH],
     description:
       "I was involved in adding new functionalities and fixing bugs in the system responsible for property registration in Poland. My contributions included implementing enhancements to existing features and resolving various issues to ensure the system's reliability and efficiency. This role allowed me to deepen my expertise in system development and maintenance while working on a crucial component of property management in Poland.",
+    page: {
+      url: 'https://www.amron.pl/',
+      icon: '/assets/icons/amron-icon.png',
+    },
   },
   {
     title: 'Shooter',

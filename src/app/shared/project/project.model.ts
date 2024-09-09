@@ -5,4 +5,8 @@ export interface Project {
   imagesURL: string[];
   tech: Tech[];
   description: string;
+  page?: {
+    url: string;
+    icon: string;
+  };
 }

@@ -1,7 +1,14 @@
 @for (project of projects; track project) {
   <div class="card-container">
     <app-card [title]="project.title">
-      <div class="card-content">
+      @if (project.page; as page) {
+        <button class="icon-button" title-content (click)="goTo(page.url)">
+          <span>
+            <img [ngSrc]="page.icon" width="20" height="20" alt="alt" />
+          </span>
+        </button>
+      }
+      <div class="card-content" content>
         <div class="carousel-container">
           <app-carousel [images]="project.imagesURL" />
         </div>
