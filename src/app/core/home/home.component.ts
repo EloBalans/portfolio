@@ -16,10 +16,10 @@ export class HomeComponent {
   techs: Tech[] = MAIN_TECHS;
 
   downloadResume() {
-    const path = '/assets/cv/Mateusz_Zatoń-Angular_Developer.pdf';
+    const path = '/assets/cv/Mateusz_Zatoń_Angular_Developer.pdf';
     const link = document.createElement('a');
     link.href = path;
-    link.download = 'Mateusz_Zatoń-Angular_Developer.pdf';
+    link.download = 'Mateusz_Zatoń_Angular_Developer.pdf';
     link.target = '_blank';
     document.body.appendChild(link);
     link.click();
